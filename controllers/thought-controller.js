@@ -15,7 +15,7 @@ const thoughtController = {
 
     // GET one thought by ID
     getOneThought(req, res) {
-        Thought.findOne({ _id: req.params.thoughtId })
+        Thought.findOne({ _id: req.params.id })
             .populate({
                 path: 'reactions',
                 select: '-__v'
@@ -112,7 +112,7 @@ const thoughtController = {
     // /api/thoughts/:thoughtId/reactions/:reactionId
     removeOneReaction(req, res) {
         Thought.findOneAndUpdate(
-            { _id: req.params.thoughtId },
+            { _id: req.params.thoughtId  },
             { $pull: { reactions: { reactionId: req.params.reactionId } } },
             { new: true, runValidators: true }
         )
@@ -131,7 +131,7 @@ const thoughtController = {
     // /api/thoughts/:thoughtId/reactions/:reactionId
     removeAllReaction(req, res) {
         Thought.findOneAndUpdate(
-            { _id: req.params.thoughtId },
+            { _id: req.params.thoughtId  },
             { $pull: { reactions: req.body } },
             { new: true, runValidators: true }
         )
