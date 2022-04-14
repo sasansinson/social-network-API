@@ -102,7 +102,7 @@ const thoughtController = {
                     { new: true, runValidators: true }
                 )
                     .then(thoughtData => {
-                        res.json({ message: 'Your thought was deleted.', thoughtData });
+                        res.json({ message: 'Your thought was deleted.', thoughtData  });
                     });
             })
             .catch(err => res.status(400).json(err));
