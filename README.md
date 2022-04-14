@@ -49,7 +49,7 @@ Users can post a thought, add a reaction to another user's thought, and add anot
 
 * [DEMO Video 1](https://drive.google.com/file/d/1qUGpjOwBGKJYmN58d-6UF2O_VeViPN7I/view?usp=sharing)
 
-* [DEMO Video 2](https://drive.google.com/file/d/1FyAH0doIbS_UtfP7Obok2SN3n1Eb2bFQ/view?usp=sharing)
+* [DEMO Video 2](https://drive.google.com/file/d/1EmrJeFoGps9hkhQ0v2TZH9DmV6zEJspy/view?usp=sharing)
 
 
 
